@@ -5,17 +5,7 @@ N.B. There is no security implemented here (no pin etc...),
 and the device always remains discoverable via bluetooth.
 This can be turned off with bluetoothctl ("discoverable off").
 
-Note, to make terminal interactive:
+To install on a network connected host run as root or sudo:
+```sh
+source <(curl -s https://raw.githubusercontent.com/ikester/RPi-Bluetooth-Console/master/setup.sh)
 ```
-su pi -
-ssh localhost
-```
-e.g.
-```
-pi@raspberrypi:~$ su pi - -c "ssh localhost"
-Password: ********
-pi@localhost's password: ********
-```
-
-For reference as to why this works:  
-http://serverfault.com/questions/411307/cannot-set-terminal-process-group-during-su-to-another-user-as-login-shell
